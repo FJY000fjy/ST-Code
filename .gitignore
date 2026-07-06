@@ -1,0 +1,17 @@
+*.pt
+*.pth
+*.ckpt
+models/weights/
+results/
+
+
+*.csv
+*.h5ad
+*.npy
+datasets/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.env
