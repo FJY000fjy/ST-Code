@@ -6,8 +6,11 @@ results/
 
 
 *.csv
+*.h5
+*.hdf5
 *.h5ad
 *.npy
+dataset/
 datasets/
 
 __pycache__/

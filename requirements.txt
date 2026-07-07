@@ -1,0 +1,29 @@
+# Recommended Python version: 3.10
+#
+# Default GPU setup for common reviewer machines such as RTX 3090/4090.
+# These cards work well with the CUDA 12.1 PyTorch wheels below.
+#
+# If you are using a newer GPU/CUDA stack, such as RTX 5090 with CUDA 12.8,
+# replace the PyTorch and PyG wheel URLs with versions matching your local
+# CUDA driver. See:
+#   https://pytorch.org/get-started/locally/
+#   https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html
+
+--extra-index-url https://download.pytorch.org/whl/cu121
+--find-links https://data.pyg.org/whl/torch-2.5.1+cu121.html
+
+torch==2.5.1
+torch-geometric>=2.6,<2.8
+torch-scatter==2.1.2
+torch-cluster==1.6.3
+
+numpy>=1.26,<2.3
+pandas>=2.0,<2.4
+scipy>=1.11,<1.16
+scikit-learn>=1.3,<1.8
+h5py>=3.8,<3.16
+scanpy>=1.10,<1.12
+anndata>=0.10,<0.12
+scprep>=1.2,<1.3
+matplotlib>=3.7,<3.11
+tqdm>=4.65,<5
