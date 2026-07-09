@@ -453,7 +453,7 @@ args = parser.parse_args()
 set_random_seed(args.seed)
 
 if args.save_dir==None:
-    args.save_dir = f'./results/SlopeST_{args.baseline_method}_results'
+    args.save_dir = f'./results/{args.baseline_method}_results'
 if args.exp_code is None:
     args.exp_code = f"{args.backbone}::{get_current_time()}"
 else:

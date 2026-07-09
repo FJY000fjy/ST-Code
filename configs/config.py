@@ -10,7 +10,7 @@ def get_args_parser():
     path_group.add_argument('--source_dataroot',type=str,default='./dataset/')
 
     # scGPT embedding
-    path_group.add_argument('--gene_emb_dataroot',type=str,default='./dataset/scgpt_emb')
+    path_group.add_argument('--gene_emb_dataroot',type=str,default='./scgpt_data/scgpt_emb')
     path_group.add_argument('--gene_emb_filename',type=str,default='gene_embeddings_scgpt.npy')
     path_group.add_argument('--gene_list',type=str,default='var_50genes.json')
     # 'kfold'  or  'fixed'
@@ -18,7 +18,7 @@ def get_args_parser():
                             help='kfold: read train_i/test_i splits; fixed: read train_0/val_0/test_0 split')
     path_group.add_argument('--split_dir',type=str,default='splits',
                             help='Directory under source_dataroot/dataset that stores split CSV files')
-    path_group.add_argument('--baseline_method',type=str,default='')
+    path_group.add_argument('--baseline_method',type=str,default='SlopeST')
     path_group.add_argument('--save_dir',type=str,default=None,help='If not specified, it will be automatically generated based on baseline_method.')
     path_group.add_argument('--exp_code',type=str,default='test')
 
