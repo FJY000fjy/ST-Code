@@ -78,7 +78,7 @@ python main.py \
   --dataset HCC \
   --source_dataroot ./dataset \
   --embed_dataroot ./dataset/embed_datasets \
-  --gene_emb_dataroot ./scgpt_data/scgpt_emb \
+  --gene_emb_dataroot ./scgpt_data/scgpt_emb 
 ```
 
 
